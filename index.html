@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Текарт, консалтинговая группа</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -215,17 +220,112 @@
 
         <section class="analytics container">
             <h3>Инсайты, отчеты, аналитика</h3>
-            <div class="case">
-                <img class="case__img" src="https://via.placeholder.com/500x300" alt="Some case">
-                <span class="case__date">11.11.2011</span>
-                <a href="#" class="case__title">
-                    Федеральный сервис по поставке химической продукции - цифровизация бизнеса, e-commerce, 
-                    кабинет клиента (b2b, b2с) и управление заказами, кредитование, интеграция с 1С:Предприятие, 
-                    СберБизнес, Райффайзенбанк, Атол.Онлайн (BINAGroup)
-                </a>
+            <div class="cases">
+                <div class="case">
+                    <img class="case__img" src="https://via.placeholder.com/500x300" alt="Some case">
+                    <span class="case__date">11.11.2011</span>
+                    <a href="#" class="case__title">
+                        Федеральный сервис по поставке химической продукции - цифровизация бизнеса, e-commerce, 
+                        кабинет клиента (b2b, b2с) и управление заказами, кредитование, интеграция с 1С:Предприятие, 
+                        СберБизнес, Райффайзенбанк, Атол.Онлайн (BINAGroup)
+                    </a>
+                </div>
+    
+                <div class="case">
+                    <img class="case__img" src="https://via.placeholder.com/500x300" alt="Some case">
+                    <span class="case__date">11.11.2011</span>
+                    <a href="#" class="case__title">
+                        Федеральный сервис по поставке химической продукции - цифровизация бизнеса, e-commerce, 
+                        кабинет клиента (b2b, b2с) и управление заказами, кредитование, интеграция с 1С:Предприятие, 
+                        СберБизнес, Райффайзенбанк, Атол.Онлайн (BINAGroup)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles container">
+            <h3>Публикации, комментарии</h3>
+            <div class="articles-items">
+                <div class="article">
+                    <div class="article__img">
+                        <img src="https://via.placeholder.com/60x60" alt="Article image">
+                    </div>
+                    <div class="article__content">
+                        <h4 class="article__title"><a href="#">Эффективность как сдерживающий фактор спроса</a></h4>
+                        <p class="article__description">Журнал «Газовый бизнес» №3 / 2021</p>
+                        <span class="article__date">10 Сентября 2021</span>
+                    </div>
+                </div>
+                
+                <div class="article">
+                    <div class="article__img">
+                        <img src="https://via.placeholder.com/60x60" alt="Article image">
+                    </div>
+                    <div class="article__content">
+                        <h4 class="article__title"><a href="#">Эффективность как сдерживающий фактор спроса</a></h4>
+                        <p class="article__description">Журнал «Газовый бизнес» №3 / 2021</p>
+                        <span class="article__date">10 Сентября 2021</span>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="article__img">
+                        <img src="https://via.placeholder.com/60x60" alt="Article image">
+                    </div>
+                    <div class="article__content">
+                        <h4 class="article__title"><a href="#">Эффективность как сдерживающий фактор спроса</a></h4>
+                        <p class="article__description">Журнал «Газовый бизнес» №3 / 2021</p>
+                        <span class="article__date">10 Сентября 2021</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__content container">
+            <div class="footer__copyright">
+                <p>© Консалтинговая группа «Текарт»</p>
+                <p><a href="#">Политика в отношении обработки персональных данных</a></p>
+            </div>
+
+            <div class="footer__contacts">
+                <p>
+                    г. Москва, Варшавское шоссе, д. 47, к. 4
+                </p>
+                <a href="tel:+74957907591">+7 (495) 790-7591</a>
+
+                <p class="footer__social">
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                </p>
+            </div>
+
+            <div class="footer__subscribe">
+                <h3>Подписаться на новости</h3>
+                <form action="/">
+                    <div class="input-wrapper">
+                        <input type="email" name="email">
+                        <input type="submit" class="btn-subscribe" value="">
+                    </div>
+                </form>
+            </div>
+
+            <div class="footer__links">
+                <h4>Все сайты подразделений</h4>
+                <ul>
+                    <li><a href="#">Маркетинговые исследования</a></li>
+                    <li><a href="#">Брендинг</a></li>
+                    <li><a href="#">Графический дизайн</a></li>
+                    <li><a href="#">Интернет решения</a></li>
+                    <li><a href="#">Интернет-маркетинг</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 <!-- JS -->
 <script src="scripts/script.js"></script>

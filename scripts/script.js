@@ -31,3 +31,10 @@ window.addEventListener('scroll', function() {
         headerLogo.src = "assets/images/logo-white.png";
     }
 });
+
+//Footer Links
+const footerLinksHeader = document.querySelector('.footer__links');
+
+footerLinksHeader.addEventListener('click', function() {
+    
+});

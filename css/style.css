@@ -3,6 +3,7 @@
     --header-height: 90px;
 
     --color-purple: #942a72;
+    --color-scorpion: #5d5d5d;
 }
 
 /* Fonts */
@@ -17,7 +18,8 @@ body {
     padding: 0;
     box-sizing: border-box;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    /* , sans-serif; */
     font-weight: 400;
     line-height: 1.6;
     color: #000;
@@ -25,6 +27,21 @@ body {
 
 html {
     font-size: 17px;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #ddd;
+    padding: 2px 30px 0;
+    width: 100%;
+    font-size: 16px;
 }
 
 /* Utility */
@@ -227,11 +244,16 @@ html {
 .analytics .case__title {
     text-decoration: none;
     color: inherit;
+
+    display: block;
+
+    margin-bottom: 30px;
 }
 .analytics .case__title:hover {
     text-decoration: underline;
 }
-.analytics h3 {
+.analytics h3,
+.articles h3 {
     font-weight: 400;
     letter-spacing: 1px;
     border-bottom: 1px solid #d4d4d4;
@@ -239,4 +261,98 @@ html {
     margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+/* Section Articles */
+.article {
+    display: flex;
+
+    margin-bottom: 30px;
+    padding: 0 5px;
+}
+.article__img {
+    width: 80px;
+}
+.article__img img {
+    width: 60px;
+}
+.article__content {
+    width: calc(100% - 80px);
+}
+.article__title {
+    margin: 0 0 15px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.article__description {
+    margin: 0;
+    font-size: 16px;
+}
+.article__date {
+    color: var(--color-scorpion);
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 35px 15px 50px;
+}
+
+.footer__social span {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+}
+
+.input-wrapper {
+    position: relative;
+}
+.btn-subscribe {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: block;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    
+    background: url('/assets/images/arrow-right.png') no-repeat 50%;
+
+    cursor: pointer;
+}
+
+.footer__links h4 {
+    position: relative;
+
+    display: inline-block;
+
+    font-weight: 300;
+    cursor: pointer;
+
+    padding-right: 30px;
+
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+.footer__links h4::after {
+    content: url('/assets/images/arrow-right.png');
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: block;
+
+    transform: rotate(90deg);
+}
+.footer__links ul {
+    display: none;
 }
